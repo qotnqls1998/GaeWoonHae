@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../../assets/font/DungGeunMo.woff') format('woff2'),
+  url('../../assets/font/DungGeunMo.woff') format('woff')
+  /* 다양한 포맷의 폰트 파일을 지정 */
+}
+
+.mypage-body1 {
+  display: flex;
+  width: 95%;
+  height: 92%;
+  font-family: 'CustomFont', sans-serif;
+}
+
+.mypageleft {
+  margin-left: 5vw;
+  margin-top: 3.5vh;
+  width: 35%;
+  height: 100%;
+  border: 2px solid rgb(235, 230, 230);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(226, 223, 223);
+}
+
+.mypageright {
+  margin-left: 2vw;
+  margin-top: 3.5vh;
+  width: 95%;
+  height: 100%;
+  border: 2px solid rgb(235, 230, 230);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(226, 223, 223);
+}
+.chart-nick {
+  margin: 3vh 0 0 4vw;
+  color: #dbbbeb;
+  font-size: 23px;
+}
+
+.mypage-body2 {
+  margin-left: 3vw;
+
+}
+.profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top:5vh;
+  /*margin-left: 5vw; */
+  width: 17vw;
+  height: 17vw;
+  background-color: white;
+  /* border: 1px solid antiquewhite; */
+  border-radius: 50%; 
+}
+
+.main-emoji {
+  /* margin: ; */
+  width: 12vw;
+  height: 11vw;
+}
+.changebtn {
+  margin-left: 1.3vw;
+  text-align: center;
+  width: 6vw;
+  height: 3vh;
+  border: 2px solid rgb(235, 230, 230);
+  background-color: rgb(228, 225, 225);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(192, 189, 189);
+  text-transform: uppercase;
+  transition:all .2s ease;
+  font-weight: 700;
+  align-items: center;
+}
+
+.changebtn:hover, .changebtn:focus, .changebtn:active {
+background-color:#edeeef ;
+color: #282a2b;
+
+}
+.changebtn2 {
+  margin-left: 1.3vw;
+  text-align: center;
+  width: 5vw;
+  height: 3vh;
+  border: 2px solid rgb(235, 230, 230);
+  background-color: rgb(228, 225, 225);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(192, 189, 189);
+  text-transform: uppercase;
+  transition:all .2s ease;
+  font-weight: 700;
+  line-height: 3vh;
+}
+
+.changebtn2:hover, .changebtn2:focus, .changebtn2:active {
+background-color:#edeeef ;
+color: #282a2b;
+
+}
+
+
+
+.points {
+  margin-left: 1.5vw;
+
+  color: blueviolet;
+  font-size: 3vh;
+}
+
+.leavesecession {
+  margin: 5vh 0 0 4vw;
+  font-size: 2.5vh;
+  color: rgb(138, 136, 136);
+  text-transform: uppercase;
+  transition:all .2s ease;
+}
+
+.leavesecession:hover, .leavesecession:focus, .leavesecession:active {
+  color: #282a2b;
+  font-weight: 600;
+  }
+
+.nickname {
+  align-items: center;
+  display: flex;
+  margin: 6vh 0 0 4vw;
+  font-size: 2vh;
+  font-weight: 550;
+}
+
+.nickname2 {
+  align-items: center;
+  margin-left: 1.5vw;
+  font-size: 2.5vh;
+  font-weight: 600;
+}
+.setemoji {
+  align-items: center;
+  margin: 5vh 0 0 4vw;
+  font-size: 2vh;
+  font-weight: 550;
+
+}
+.savepoint {
+  align-items: center;
+  margin: 5vh 0 0 4vw;
+  font-size: 2vh;
+  font-weight: 550;
+}
+
+.secession {
+  margin: 5vh 0 0 4vw;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.helth-chart {
+  margin: 3vh 0 0 1vw;
+  width: 60vw;
+  height: 30vh;
+  /* border: 2px solid black; */
+}
+
+.nametag {
+  font-size: 25px;
+  font-weight: 550;
+  color:blueviolet;
+}
+
+@media (max-width: 1420px) {
+  .changebtn {
+    display: none;
+  }
+  .changebtn2 {
+    display: none;
+  }
+}
+
+.image1 {
+  margin: 2vh 0 0 5vw;
+  width: 20vw;
+  height: 20vh;
+  border: 2px solid black;
+}
+
+.Calendar-tag {
+  margin: 5vh 0 0 4vw;
+  font-size: 20px;
+  font-weight: 550;
+  color: #8959a8;
+}
+
+.Calendar {
+  margin-top: 1.2vh;
+  display: flex;
+}
+
+.image2 {
+  margin-left: 5vw;
+  width: 20vw;
+  height: 30vh;
+  /* border: 2px solid black; */
+  font-size: 17px;
+  font-weight: 550;
+}
+
+.image3 {
+  margin-left: 5vw;
+  width: 25vw;
+  height: 30vh;
+  /* border: 2px solid black; */
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.kcal {
+  margin: 1vh 0 0 1vw;
+}
+
+.mypage-money {
+  width: 1.2vw;
+  margin-left: 0.5vw;
+}
+
+.kcal-table {
+  border-collapse: separate;
+  border-right: 5px ;
+  /* border-spacing: 5px;  */
+  font-size: 1.7vw;
+
+}
+
+.kcal-table td {
+  padding: 3px;
+  /* padding-right: 10vw; */
+  /* border: 1px solid #ccc; */
+}
+.colored-td{
+  color: blueviolet;
+}

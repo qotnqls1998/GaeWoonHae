@@ -1,0 +1,329 @@
+.golobby {
+    /* margin-top : 0 auto; */
+    font-family: 'CustomFont', sans-serif; /* 로컬 폰트 사용 */
+    position: fixed;
+    /* top: 20%; */
+    /* left: 25%; */
+    height: 80vh;
+    width: 60vw;
+    /* border: 13px solid rgb(236, 170, 103); */
+    background-color: white;
+    z-index:1;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgb(133, 132, 132);
+}
+
+.gametitle {
+    margin-left: 0 auto;
+    width: 100%;
+    height: 5vh;
+    /* text-align: center; */
+    /* margin-left: 20vw; */
+    border: 2px solid black;
+    /* text-decoration: underline; */
+}
+
+.cancelbtn {
+    /* margin-top: 1vh;
+    margin-right: 15vw; */
+    position: absolute;
+    right: 1vw;
+    top: 0.7vw;
+    text-align: center;
+    line-height: 2.5vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    /* border: 2px solid black; */
+    font-size: 2vw;
+    /* border-radius: 5px; */
+}
+
+.canceltext {
+    text-transform: uppercase;
+    transition:all .4s ease;
+}
+.canceltext:hover, .canceltext:focus, .canceltext:active {
+    background-color:orangered ;
+    color: #f1ecec;
+}
+
+
+.selectlobby {
+    display: flex;
+    /* margin-top: 1vh; */
+    border: black;
+}
+
+.Loobycreate {
+    margin-left: 4vh;
+    width: 20vw;
+    height: 10vh;
+    border: 2px solid black;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+.Loobyselect {
+    margin-left: 5vh;
+    width: 20vw;
+    height: 10vh;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.roomtext {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40vh;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #cfd1db;
+    padding: 9px 32px;
+    border: 3px solid rgb(97, 97, 97); 
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition:all .4s ease;
+}
+
+
+
+.roomtext:hover, .roomtext:focus, .roomtext:active {
+    background-color:#a5c8e9 ;
+    color: #141414;
+}
+
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.6);  /* 배경을 흐린 회색으로 설정 */
+}
+
+.modalButton-left{ 
+    margin-top: 2vh;
+    /* margin: 0 auto; */
+    margin-left: 12vw;
+    width: 15vw;
+    height: 9vh;
+    background-color:white ;
+
+    border: 2px solid rgb(235, 230, 230);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px rgb(192, 189, 189);
+    font-size: 30px;
+    transition:all .2s ease;
+}
+.modalButton-right{ 
+    margin-top: 2vh;
+    margin-left: 5vw; 
+    /* margin: 0 auto; */
+    width: 15vw;
+    height: 9vh;
+    background-color:white ;
+    
+    border: 2px solid rgb(235, 230, 230);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px rgb(192, 189, 189);
+    font-size: 30px;
+    transition:all .2s ease;
+}
+
+.go-lobby:hover, .go-lobby:focus, .go-lobby:active {
+    background-color:#e6ecf1 ;
+    color: #282a2b;
+  }
+  
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../assets/font/DungGeunMo.woff2') format('woff2'),
+    url('../../assets/font/DungGeunMo.woff') format('woff')
+    /* 다양한 포맷의 폰트 파일을 지정 */
+  }
+  
+  body {
+    font-family: 'CustomFont', sans-serif; /* 로컬 폰트 사용 */
+  }
+
+  .tutorial{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border: 20px red;
+    width: 55vw;
+    margin: 0 auto;
+    /* border: 5px solid rgb(0, 0, 0); */
+  }
+  .tutorial2{
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+    border: 20px red;
+    width: 55vw;
+    margin: 0 auto;
+    /* border: 5px solid rgb(0, 0, 0); */
+    height: 33vh;
+  }
+
+  .tutorial-name{
+    margin: 5vh 0 6vh 0;
+    font-size: 2vw;
+  }
+
+  .mostuto{
+    height: 33vh;
+  }
+
+  .tutorial-content{
+    margin-top: 2vh;
+    font-size: 1vw;
+  }
+
+  .mos-img-modal {
+    position: absolute;
+    height: 8vh;
+    left: 29vw;
+  }
+
+  .mosdie-img-modal {
+    position: absolute;
+    height: 5vh;
+    left: 42vw;
+    top: 4vh;
+  }
+
+  .mst1 {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .mst1.show {
+    opacity: 1;
+  }
+  .mst2 {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .mst2.show {
+    opacity: 1;
+  }
+  .mst3 {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .mst3.show {
+    opacity: 1;
+  }
+  
+  .mst4 {
+    transform: scaleX(-1);
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .mst4.show {
+    opacity: 1;
+  }
+  
+  .mst5 {
+    
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .mst5.show {
+    opacity: 1;
+  }
+  
+  .mst6 {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .mst6.show {
+    opacity: 1;
+  }
+
+  .pictos {
+    height: 33vh;
+    position: absolute;
+    left: 10vw;
+    top: 0;
+  }
+
+  .pictos2 {
+    transform: scaleX(-1);
+    height: 25vh;
+    position: absolute;
+    left: 20vw;
+    top: 5vh;
+  }
+  .pictos3 {
+    height: 28vh;
+    position: absolute;
+    left: 35vw;
+    top: 2vh;
+  }
+  
+  .success-imgs {
+    height: 22vh;
+    position: absolute;
+    left: 35vw;
+    top: 5vh;
+  }
+
+  .pic1 {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .pic1.show {
+    opacity: 1;
+  }
+  .pic2 {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .pic2.show {
+    opacity: 1;
+  }
+  .pic3 {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .pic3.show {
+    opacity: 1;
+  }
+  .pic4 {
+    opacity: 0;
+    transition: fadeInOut 5.5s ease-in-out;
+  }
+  
+  .pic4.show {
+    opacity: 1;
+  }
+
+  @keyframes fadeInOut {
+    0%, 70% {
+      opacity: 0;
+    }
+    30%, 100% {
+      opacity: 1;
+    }
+  }

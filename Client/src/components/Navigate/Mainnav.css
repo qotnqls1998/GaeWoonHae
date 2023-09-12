@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../assets/font/DungGeunMo.woff') format('woff2'),
+    url('../../assets/font/DungGeunMo.woff') format('woff')
+    /* 다양한 포맷의 폰트 파일을 지정 */
+}
+
+
+.navboxheader {
+    display: flex;
+    /* justify-content: space-between; */
+    height: 10vh;
+}
+
+.navbox-tag {
+    display: flex;
+    height: 10vh;
+    margin-left: auto;
+    align-items: center;
+}
+
+.menu {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 800;
+    margin-right: 3vw;
+    color: blueviolet;
+    text-transform: uppercase;
+    transition:all .2s ease;
+    
+}
+
+.menu:hover, .menu:focus, .menu:active {
+/* background-color:#a5c8e9 ; */
+    color: #282a2b;
+}
+
+.mypageicon {
+    height: 6vh;
+    margin-right: 2vw;
+}
+
